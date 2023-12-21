@@ -1,0 +1,44 @@
+<!--Navigation bar starts-->
+<nav class="flex justify-end bg-blue-400 mx-auto w-full">
+    <ul class="font-semibold p-2 flex space-x-2">
+        <li>
+            <a 
+            routerLink="/home" 
+            routerLinkActive="text-red-500"class="hover:bg-gray-300 p-1"
+            >Home
+            </a>
+        </li>
+        
+        <li>
+            <a 
+            routerLink="/employees" 
+            routerLinkActive="text-red-500"
+            class="hover:bg-gray-300 p-1"
+            >Employee List
+            </a>
+        </li>
+      
+        <li>
+            <a 
+            routerLink="/create-employee" 
+            routerLinkActive="text-red-500"
+            class="hover:bg-gray-300 p-1"
+            >Add Employee
+            </a>
+        </li>
+    </ul>
+</nav>
+<!--Navigation bar Ends-->
+
+<!--Main content location-->
+<h1 class="text-center text-2xl font-bold">{{title}}</h1>
+<div class=" container  pb-16  justify-center overflow-auto">
+    <router-outlet></router-outlet>
+</div>
+
+<!--Footer starts-->
+<footer class="bg-blue-400 w-full p-1 fixed bottom-0 block ">
+   <div>
+    <span>All Rights Reserved 2023 @mr.swapnilpandey</span>
+   </div>
+</footer>

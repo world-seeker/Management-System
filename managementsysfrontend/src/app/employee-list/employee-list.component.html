@@ -1,0 +1,44 @@
+<h2 class="text-3xl text-center p-10">Employee List</h2>
+
+<table class="table-auto w-full border ">
+
+    <thead class="border">
+        <tr class="h-16">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>EmailId</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody class="text-center">
+        <tr *ngFor="let employee of employees" class="border bg-gray-300 ">
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.emailId}}</td>
+            <td class="my-2 flex ">
+                <Button 
+                (click)="updateEmployee(employee,employee.id)"
+                class="btn "
+                >
+                update   
+                </Button>
+                &nbsp;
+                <Button 
+                (click)="deleteEmployee(employee.id)"
+                class="btn"
+                >
+                Delete  
+                </Button>
+                &nbsp;
+                <Button 
+                (click)="detailEmployee(employee.id)"
+                class="btn col-span-3"
+                >
+                Details 
+                </Button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>

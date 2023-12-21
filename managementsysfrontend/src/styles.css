@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn{
+    background-color: green;
+    border-radius: 5%;
+    font-weight:bold;
+    font-size: 1rem;
+    padding: 1vw;
+    margin: 0 auto; 
+}
+
+.btn:hover{
+    background-color: skyblue;
+}
+
+.inpt{
+    display:block;
+    width:100%;
+    border-radius: 0.375rem; 
+    border: none; 
+    padding-top: 0.375rem; 
+    padding-bottom: 0.375rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    outline: 2px solid transparent; 
+    outline-offset: 2px; 
+    outline-color: #e2e8f0;
+    
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.inpt:focus{
+    outline: 2px solid transparent; 
+    outline-offset: 2px; 
+    outline-color: #4f46e5; 
+}
